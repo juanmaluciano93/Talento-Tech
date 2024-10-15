@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <!--
+    <form action="#" method="POST">
+        
+
+        <label for="name">Ingrese su nombre</label>
+        <input type="text" name="name">
+
+        <br>
+
+        <label for="lastname">Ingrese su apellido</label>
+        <input type="text" name="lastname">
+
+        <input type="submit">
+
+    </form>
+    -->
+
+    <h1>Trabajando con formularios</h1>
+
+    <form action="https://formspree.io/f/xeoqqlpy" method="POST">
+
+        <fieldset>
+
+            <legend>
+                <h2>Registro de usuario - Ingrese sus datos</h2>
+            </legend>
+
+            <p>
+                <label for="name">Nombre/s</label>
+                <input type="text" name="name" id="name" required minlength="3" maxlength="10">
+            </p>    
+
+            <p>
+                <label for="lastname">Apellido</label>
+                <input type="text" name="lastname" id="lastname">
+            </p> 
+
+            <p>
+                <label for="email">Mail</label>
+                <input type="email" name="email" id="email" placeholder="usuario@cuenta.com" pattern="/^(([^<>()\[\]\\.,;:\s@”]+(\.[^<>()\[\]\\.,;:\s@”]+)*)|(“.+”))@((\[[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}])|(([a-zA-Z\-0–9]+\.)+[a-zA-Z]{2,}))$/" required>
+            </p> 
+
+            <p>
+                <label for="phone">Telefono</label>
+                <input type="tel" name="phone" id="phone" placeholder="123-123-1234" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+            </p> 
+
+            <p>
+                <label for="address">Direccion</label>
+                <input type="text" name="address" id="address">
+            </p> 
+
+            <p>
+                <label for="PostalCode">Cod. Postal</label>
+                <input type="number" name="PostalCode" id="PostalCode">
+            </p>
+
+            <p>
+                <label for="Birthdate">Fecha de Nacimiento</label>
+                <input type="date" name="Birthdate" id="Birthdate">
+            </p>
+
+            <p>
+                <label for="level">Nivel de estudio</label>
+                <input type="radio" name="level" id="1">Primario
+                <input type="radio" name="level" id="2">Secundario
+                <input type="radio" name="level" id="3">Universitario
+            </p>
+
+            <p>
+                <label for="ocupation">Ocupacion</label>
+                <select name="ocupation" id="ocupation">
+                    <optgroup label="Estudia">
+                        <option value="1">Desempleado</option>
+                        <option value="2">Administrativo</option>
+                        <option value="3">Docente</option>
+                    </optgroup>
+                    <optgroup label="Trabaja"></optgroup>
+                        <option value="4">Desempleado</option>
+                        <option value="5">Administrativo</option>
+                        <option value="6">Docente</option>
+                    </optgroup>
+                </select>
+            </p>
+
+            <p>
+                <label for="ocupation">Ocupacion</label>
+                <select multiple>
+                        <option value="1">Desempleado</option>
+                        <option value="2">Administrativo</option>
+                        <option value="3">Docente</option>
+                        <option value="4">Desempleado</option>
+                        <option value="5">Administrativo</option>
+                        <option value="6">Docente</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="conocimiento">Conocimiento en programacion</label>
+                <input type="checkbox" name="html" value="html" id="conocimiento">HTML
+                <input type="checkbox" name="css" value="css" id="conocimiento">CSS
+                <input type="checkbox" name="js" value="js" id="conocimiento">JS
+            </p>
+
+            <p>
+                <label for="imagen">Foto de perfil</label>
+                <input type="file" name="imagen" id="imagen">
+            </p>
+
+            <p>
+                <label for="password">Contraseña</label>
+                <input type="password">
+            </p>
+
+            <p>
+                <label for="description">Descripcion</label>
+                <textarea name="description" id="description" cols="30" rows="10"></textarea>
+            </p>
+
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpiar">
+            </p>
+
+        </fieldset>
+
+    </form>
+</body>
+</html>
