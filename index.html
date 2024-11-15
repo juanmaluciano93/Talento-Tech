@@ -1,137 +1,170 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formularios</title>
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Mundo Silent Hill</title>
 </head>
+
 <body>
-    <!--
-    <form action="#" method="POST">
-        
+    <header>
+        <div id="logos">
+            <div class="emblema">
+                <img src="IMG/logo2_silenthill.jpg" alt="logo2_silenthill">
+            </div>
+            <div class="emblema">
+                <img src="IMG/logo2_silenthill.jpg" alt="logo2_silenthill">
+            </div>
+            <div class="emblema">
+                <img src="IMG/logo2_silenthill.jpg" alt="logo2_silenthill">
+            </div>
+            <div id="logo">
+                <img src="IMG/logo_silenthill.jpg" alt="logo_silenthill">
+            </div>
+            <div class="emblema">
+                <img src="IMG/logo2_silenthill.jpg" alt="logo2_silenthill">
+            </div>
+            <div class="emblema">
+                <img src="IMG/logo2_silenthill.jpg" alt="logo2_silenthill">
+            </div>
+            <div class="emblema">
+                <img src="IMG/logo2_silenthill.jpg" alt="logo2_silenthill">
+            </div>
+        </div>
+        <nav>
+            <a class="estilo" href="index.html" target="_blank" rel="home">Home</a>
+            <a class="estilo" href="PAGES/juegos.html" target="_blank" rel="juegos">Juegos</a>
+            <a class="estilo" href="PAGES/peliculas.html" target="_blank" rel="peliculas">Películas</a>
+            <a class="estilo" href="PAGES/registrarse.html" target="_blank" rel="registrarse">Registrarse</a>
+        </nav>
+    </header>
 
-        <label for="name">Ingrese su nombre</label>
-        <input type="text" name="name">
-
-        <br>
-
-        <label for="lastname">Ingrese su apellido</label>
-        <input type="text" name="lastname">
-
-        <input type="submit">
-
-    </form>
-    -->
-
-    <h1>Trabajando con formularios</h1>
-
-    <form action="https://formspree.io/f/xeoqqlpy" method="POST">
-
-        <fieldset>
-
-            <legend>
-                <h2>Registro de usuario - Ingrese sus datos</h2>
-            </legend>
-
-            <p>
-                <label for="name">Nombre/s</label>
-                <input type="text" name="name" id="name" required minlength="3" maxlength="10">
-            </p>    
-
-            <p>
-                <label for="lastname">Apellido</label>
-                <input type="text" name="lastname" id="lastname">
-            </p> 
-
-            <p>
-                <label for="email">Mail</label>
-                <input type="email" name="email" id="email" placeholder="usuario@cuenta.com" pattern="/^(([^<>()\[\]\\.,;:\s@”]+(\.[^<>()\[\]\\.,;:\s@”]+)*)|(“.+”))@((\[[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}])|(([a-zA-Z\-0–9]+\.)+[a-zA-Z]{2,}))$/" required>
-            </p> 
-
-            <p>
-                <label for="phone">Telefono</label>
-                <input type="tel" name="phone" id="phone" placeholder="123-123-1234" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
-            </p> 
-
-            <p>
-                <label for="address">Direccion</label>
-                <input type="text" name="address" id="address">
-            </p> 
-
-            <p>
-                <label for="PostalCode">Cod. Postal</label>
-                <input type="number" name="PostalCode" id="PostalCode">
+    <main>
+        <h1>Te doy la bienvenida al apasionante mundo de Sillent Hill!</h1>
+        <div id="slider-container">
+            <div id="slider">
+                <div class="game">
+                    <img src="IMG/silenthill_1.jpg" alt="silenthill_1">
+                </div>
+                <div class="game">
+                    <img src="IMG/silenthill_2.jpg" alt="silenthill_2">
+                </div>
+                <div class="game">
+                    <img src="IMG/silenthill_3.jpg" alt="silenthill_3">
+                </div>
+                <div class="game">
+                    <img src="IMG/silenthill_4.jpg" alt="silenthill_4">
+                </div>
+            </div>
+        </div>
+        <div id="contenedor">
+            <ul>
+                <li><a href="#sección1">Introducción</a></li>
+                <li><a href="#sección2">Historia</a></li>
+                <li><a href="#sección3">Staff</a></li>
+            </ul>
+        </div>
+        <section>
+            <h2 id="sección1">Introducción</h2>
+            <p><strong>Silent Hill</strong> es una popular serie de videojuegos de terror desarrollada por Konami. La franquicia se caracteriza por su atmósfera opresiva, su narrativa obscura, y su enfoque en el terror psicológico, lo que le permitió convertirse en un ícono del género. Además de los juegos, también se han creado películas, cómics y otros medios relacionados con la franquicia.
             </p>
+        </section>
+        <section>
+            <h2 id="sección2">Historia</h2>
+            <p>En el mes de septiembre de 1996, un grupo de desarrolladores comenzaria a trabajar en una nueva aventura de terror para Konami. El equipo ( que pasaria a llamarse "Team Silent") estaba liderado por el director Keiichiro Toyama, el diseñador de personajes Masahiro Ito y el productor Akira Yamaoka, quien también compuso la icónica música de la serie. Estos talentosos individuos desempeñaron roles clave en la creación de la atmósfera inquietante y los elementos de terror psicológico que se convirtieron en las señas de identidad de Silent Hill.
+            </p><br>
+            <p>Debido al gran éxito del primer lanzamiento, el Team Silent desarrolló otros tres juegos de la franquicia otorgando nuevas dimensiones a la historia y al misterio detrás de Silent Hill.
+            </p><br>
+            <p>Tras el lanzamiento de "Silent Hill 4: The Room," el Team Silent se disolvió, y los futuros juegos de la franquicia fueron desarrollados por diferentes equipos. Aunque los juegos posteriores mantuvieron elementos de la serie, muchos fanáticos consideran que los títulos del Team Silent son los más emblemáticos de la franquicia.
+            </p><br>
+            <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="1000">
+                        <img src="IMG/team_sillent.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="1000">
+                        <img src="IMG/team_sillent2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="1000">
+                        <img src="IMG/team_sillent3.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2 id="sección3">Staff</h2>
+            <table id="tabla">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Función</th>
+                    <th>Foto</th>
+                </tr>
+                <tr>
+                    <td class="oscuro">Keiichiro Toyama</td>
+                    <td>Director de Silent Hill</td>
+                    <td><img class="foto" src="IMG/foto1.jpg" alt="Keiichiro Toyama"></td>
+                </tr>
+                <tr>
+                    <td class="oscuro">Hiroyuki Owaku</td>
+                    <td>Escritor de escenario de Silent Hill 1, 2 y 3</td>
+                    <td><img class="foto" src="IMG/foto2.jpg" alt="Hiroyuki Owaku"></td>
+                </tr>
+                <tr>
+                    <td class="oscuro">Akihiro Imamura</td>
+                    <td>Productor de Silent Hill 1, 2 y 4</td>
+                    <td><img class="foto" src="IMG/foto3.jpg" alt="Akihiro Imamura"></td>
+                </tr>
+                <tr>
+                    <td class="oscuro">Masahiro Ito</td>
+                    <td>Director de arte de Silent Hill 1, 2 y 3</td>
+                    <td><img class="foto" src="IMG/foto4.jpg" alt="Masahiro Ito"></td>
+                </tr>
+                <tr>
+                    <td class="oscuro">Suguru Murakoshi</td>
+                    <td>Director de drama y animador de drama de Silent Hill 2. <br>Director y escritor de escenario de Silent Hill 4
+                    </td>
+                    <td><img class="foto" src="IMG/foto5.jpg" alt="Suguru Murakoshi"></td>
+                </tr>
+                <tr>
+                    <td class="oscuro">Takayoshi Sato</td>
+                    <td>Diseñador de personajes y creador CGI de Silent Hill 1 y 2</td>
+                    <td><img class="foto" src="IMG/foto6.jpg" alt="Takayoshi Sato"></td>
+                </tr>
+                <tr>
+                    <td class="oscuro">Masashi Tsuboyama</td>
+                    <td>Diseñador de fondo de Silent Hill 1. <br> Director y diseñador de pueblo de Silent Hill 2. <br>
+                    Director de arte de Silent Hill 4</td>
+                    <td><img class="foto" src="IMG/foto7.jpg" alt="Masashi Tsuboyama"></td>
+                </tr>
+                <tr>
+                    <td class="oscuro">Kazuhide Nakazawa</td>
+                    <td>Animador de Silent Hill 2. <br> Director de Silent Hill 3</td>
+                    <td><img class="foto" src="IMG/foto8.jpg" alt="Kazuhide Nakazawa"></td>
+                </tr>
+                <tr>
+                    <td class="oscuro">Akira Yamaoka</td>
+                    <td>Compositor de Silent Hill 1 y 2. <br> Productor y compositor de Silent Hill 3 y 4</td>
+                    <td><img class="foto" src="IMG/foto9.jpg" alt="Akira Yamaoka"></td>
+                </tr>
+            </table>
+        </section>
+    </main>
 
-            <p>
-                <label for="Birthdate">Fecha de Nacimiento</label>
-                <input type="date" name="Birthdate" id="Birthdate">
-            </p>
+    <footer>
+        <p>Redes Sociales</p>
+        <a href="https://twitter.com/silenthill?lang=es" target="_blank"><img class="icono" src="IMG/icono_twitter.png" alt="twitter"></a>
+        <a href="https://www.facebook.com/WelcomeToSilentHillOriginal/" target="_blank"><img class="icono" src="IMG/icono_facebook.png" alt="facebook"></a>
+        <a href="https://www.instagram.com/silent.hill.official/?hl=es" target="_blank"><img class="icono" src="IMG/icono_instagram.png" alt="instagram"></a><br><br>
+        <p>Copyright 2024 © Mundo Silent Hill todos los derechos reservados</p>
+        <p>Diseñado por Juan Manuel Luciano</p>
+    </footer>
 
-            <p>
-                <label for="level">Nivel de estudio</label>
-                <input type="radio" name="level" id="1">Primario
-                <input type="radio" name="level" id="2">Secundario
-                <input type="radio" name="level" id="3">Universitario
-            </p>
+    <script src="JS/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
-            <p>
-                <label for="ocupation">Ocupacion</label>
-                <select name="ocupation" id="ocupation">
-                    <optgroup label="Estudia">
-                        <option value="1">Desempleado</option>
-                        <option value="2">Administrativo</option>
-                        <option value="3">Docente</option>
-                    </optgroup>
-                    <optgroup label="Trabaja"></optgroup>
-                        <option value="4">Desempleado</option>
-                        <option value="5">Administrativo</option>
-                        <option value="6">Docente</option>
-                    </optgroup>
-                </select>
-            </p>
-
-            <p>
-                <label for="ocupation">Ocupacion</label>
-                <select multiple>
-                        <option value="1">Desempleado</option>
-                        <option value="2">Administrativo</option>
-                        <option value="3">Docente</option>
-                        <option value="4">Desempleado</option>
-                        <option value="5">Administrativo</option>
-                        <option value="6">Docente</option>
-                </select>
-            </p>
-
-            <p>
-                <label for="conocimiento">Conocimiento en programacion</label>
-                <input type="checkbox" name="html" value="html" id="conocimiento">HTML
-                <input type="checkbox" name="css" value="css" id="conocimiento">CSS
-                <input type="checkbox" name="js" value="js" id="conocimiento">JS
-            </p>
-
-            <p>
-                <label for="imagen">Foto de perfil</label>
-                <input type="file" name="imagen" id="imagen">
-            </p>
-
-            <p>
-                <label for="password">Contraseña</label>
-                <input type="password">
-            </p>
-
-            <p>
-                <label for="description">Descripcion</label>
-                <textarea name="description" id="description" cols="30" rows="10"></textarea>
-            </p>
-
-            <p>
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Limpiar">
-            </p>
-
-        </fieldset>
-
-    </form>
 </body>
+
 </html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Mundo Silent Hill</title>
+</head>
+
+<body>
+    <header>
+        <div id="logos">
+            <div class="emblema">
+                <img src="../IMG/logo2_silenthill.jpg" alt="logo2_silenthill">
+            </div>
+            <div class="emblema">
+                <img src="../IMG/logo2_silenthill.jpg" alt="logo2_silenthill">
+            </div>
+            <div class="emblema">
+                <img src="../IMG/logo2_silenthill.jpg" alt="logo2_silenthill">
+            </div>
+            <div id="logo">
+                <img src="../IMG/logo_silenthill.jpg" alt="logo_silenthill">
+            </div>
+            <div class="emblema">
+                <img src="../IMG/logo2_silenthill.jpg" alt="logo2_silenthill">
+            </div>
+            <div class="emblema">
+                <img src="../IMG/logo2_silenthill.jpg" alt="logo2_silenthill">
+            </div>
+            <div class="emblema">
+                <img src="../IMG/logo2_silenthill.jpg" alt="logo2_silenthill">
+            </div>
+        </div>
+        <nav>
+            <a class="estilo" href="../index.html" target="_blank" rel="home">Home</a>
+            <a class="estilo" href="juegos.html" target="_blank" rel="juegos">Juegos</a>
+            <a class="estilo" href="peliculas.html" target="_blank" rel="peliculas">Películas</a>
+            <a class="estilo" href="registrarse.html" target="_blank" rel="registrarse">Registrarse</a>
+        </nav>
+    </header>
+    
+    <main>
+        <h2>Registrarse</h2>
+        <form target="_blank" id="formulario">
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="userName" maxlength="20" required>
+                <label for="floatingInput">Nombre (Max. 20 caracteres) **</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="userSurname"  minlength="2" required>
+                <label for="floatingInput">Apellido (Min. 2 caracteres) **</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="userStreet">
+                <label for="floatingInput">Calle</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="number" class="form-control" id="userNumStreet">
+                <label for="floatingInput">Número</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" value="C.A.B.A." id="userCity">
+                <label for="floatingInput">Ciudad</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="number" class="form-control" id="userZipCode">
+                <label for="floatingInput">Código Postal</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="tel" class="form-control" id="userTel" required>
+                <label for="floatingInput">Teléfono **</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="date" class="form-control" id="userDob" required>
+                <label for="floatingInput">Fecha de Nacimiento **</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="userEmail" required>
+                <label for="floatingInput">Mail **</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="password" class="form-control" minlength="8" maxlength="15" id="userPassword" required>
+                <label for="floatingInput">Clave (Entre 8 y 15 caracteres) **</label>
+            </div>       
+            <label for="gender">Género:</label>
+            <input type="radio" name="gender" value="Hombre" checked>Hombre
+            <input type="radio" name="gender" value="Mujer">Mujer
+            <input type="radio" name="gender" value="Otro">Otro
+            <br><br>
+            <label for="knowledge">¿Cuánto sabes sobre Silent Hill?:</label>
+            <select name="knowledge" class="input">
+                <option>Nada</option>
+                <option>Poco</option>
+                <option>Normal</option>
+                <option>Mucho</option>
+            </select>
+            <br><br>
+            <label for="likes">¿Qué te gusta de la franquicia?</label>
+            <input type="checkbox" name="likes" value="Comics"> Comics
+            <input type="checkbox" name="likes" value="Juegos"> Juegos
+            <input type="checkbox" name="likes" value="Libros"> Libros
+            <input type="checkbox" name="likes" value="Música"> Música
+            <input type="checkbox" name="likes" value="Películas"> Películas
+            <br><br>
+            <label for="text">Comentarios:</label>
+            <br>
+            <textarea name="text" rows="10" placeholder=" Ingrese sus comentarios aqui..."></textarea>
+            <br><br>
+            <p>** Campos obligatorios</p>
+            <input type="reset" value="Borrar" id="borrar">
+            <br><br>
+            <input type="submit" value="Enviar" id="enviar">
+            <br>
+        </form>
+        
+    </main>
+    
+    <footer>
+        <p>Redes Sociales</p>
+        <a href="https://twitter.com/silenthill?lang=es" target="_blank"><img class="icono" src="../IMG/icono_twitter.png" alt="twitter"></a>
+        <a href="https://www.facebook.com/WelcomeToSilentHillOriginal/" target="_blank"><img class="icono" src="../IMG/icono_facebook.png" alt="facebook"></a>
+        <a href="https://www.instagram.com/silent.hill.official/?hl=es" target="_blank"><img class="icono" src="../IMG/icono_instagram.png" alt="instagram"></a><br><br>
+        <p>Copyright 2024 © Mundo Silent Hill todos los derechos reservados</p>
+        <p>Diseñado por Juan Manuel Luciano</p>
+    </footer>
+
+    <script src="../JS/script.js"></script>
+
+</body>
+
+</html>
