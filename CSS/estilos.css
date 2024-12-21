@@ -1,10 +1,10 @@
-/* Se agregaron estilos desde google fonts */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;900&family=Nixie+One&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nixie+One&family=Young+Serif&display=swap');
 
 /* Reseteo de los valores para todos los elementos HTML */
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /* Estilos para encabezados y pies de página */
@@ -320,6 +320,139 @@ textarea {
         transform: translateX(-300%);
     }
 }
+
+/* Navbar Responsiva con Bootstrap */
+.navbar {
+    background-color: #343a40 !important; /* Color de fondo personalizado */
+}
+
+.navbar .navbar-nav .nav-link {
+    color: white !important; /* Color de texto */
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: #FFA500 !important; /* Color al pasar el ratón */
+}
+
+.navbar-toggler {
+    border-color: #FFA500 !important; /* Color de borde del botón de hamburguesa */
+}
+
+.navbar-toggler-icon {
+    background-color: #FFA500 !important; /* Color del icono de hamburguesa */
+}
+
+
+/* Estilo general para las tarjetas de productos */
+.product-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px;
+    text-align: center;
+    background-color: #f9f9f9; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.2s, box-shadow 0.2s; 
+}
+
+.product-card:hover {
+    transform: translateY(-5px); /* Efecto de elevación */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+.product-card img {
+    width: 100%;
+    max-width: 200px; 
+    height: auto;
+    margin-bottom: 12px;
+    border-radius: 8px; 
+}
+
+/* Estilos para los botones dentro de la tarjeta */
+.product-card button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s; 
+}
+
+.product-card button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); 
+}
+
+/* Estilo para el contenedor del carrito */
+#cart {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Estilo para cada item en el carrito */
+#cart div {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+#cart p {
+    font-size: 18px;
+    color: #333;
+}
+
+/* Botones de cambio de cantidad y eliminación */
+#cart button {
+    margin-left: 10px;
+    padding: 8px 16px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#cart button:hover {
+    background-color: #218838;
+    transform: scale(1.05); 
+}
+
+#cart button:active {
+    background-color: #1e7e34;
+}
+
+/* Estilo para el total */
+#cart #total {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+}
+
+/* Estilos adicionales para el carrito si es necesario */
+#cart {
+    max-width: 500px;
+    margin: auto;
+}
+
 
 /* Media query para telefono celular */
 @media screen and (max-width: 767px) {
